@@ -1,5 +1,5 @@
 // Set favicon
-document.querySelector("link[rel~='icon']").href = chrome.runtime.getURL("../assets/twitter-favicon.png");
+document.querySelector("link[rel~='icon']").href = chrome.runtime.getURL("../assets/dogecoin-favicon.png");
 
 function waitForElement(selector) {
   return new Promise(resolve => {
@@ -33,7 +33,7 @@ waitForElement('[aria-label="Twitter"]').then((elm) => {
   container.innerHTML = "";
 
   const twitterIcon = document.createElement("img");
-  twitterIcon.src = chrome.runtime.getURL("../assets/twitter.png");
+  twitterIcon.src = chrome.runtime.getURL("../assets/dogecoin.png");
   twitterIcon.width = 42;
   twitterIcon.height = 42;
   container.appendChild(twitterIcon);
@@ -44,7 +44,7 @@ const titleObserver = new MutationObserver((mutationList) => {
     for (const mutation of mutationList) {
       if (mutation.addedNodes.forEach(node => {
         const title = document.querySelector('title');
-        if (node.textContent.endsWith('X')) title.innerText = title.innerText.slice(0, -1) + 'Twitter';
+        if (node.textContent.endsWith('X')) title.innerText = title.innerText.slice(0, -1) + 'Dogecoin';
       }));
     }
   }

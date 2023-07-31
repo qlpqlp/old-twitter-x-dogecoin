@@ -1,6 +1,6 @@
 ## About
 
-Don't like the Twitter rebrand to x.com? Neither did I, so I made this Chrome extension that lets you revert x-branding back to the beloved bird.
+Remember Dogecoin logo on Twitter / X ? So I clone https://github.com/cygaar/old-twitter Repo and changed a litlebit to make this Chrome extension that lets you shoe Dogecoin Logo.
 
 The loading icon still needs to be replaced.
 
